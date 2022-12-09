@@ -46,7 +46,6 @@ const Gp3 = () => {
             entrance to on by. As put impossible own apartments b
           </p>
         </div>
-
       </div>
     </div>
   );
