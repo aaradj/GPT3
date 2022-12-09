@@ -10,8 +10,7 @@ import Footer from "./Footer";
 
 const Main = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.background}>   
+        <div className={styles.container}>  
             <Navbar/>
             <Header/>
             <Gp3/>
@@ -19,7 +18,6 @@ const Main = () => {
             <Possibiloty/>
             <Blogs/>
             <Footer/>
-            </div>
         </div>
     );
 };
