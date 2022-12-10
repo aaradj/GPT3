@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.container .main{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding-bottom:10rem ;
+}
+.container .main .img{
+    width: 50%;
+}
+.main .img img{
+    width:650px;
+}
+.main .text{
+    height: 50vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 4rem;
+    justify-content: space-evenly;
+}
+.main .text .textTitle{
+    color: rgba(113, 229, 255, 1);
+}
+.main .text h2{
+    font-size: 2.2rem;
+    width: 60%;
+    line-height: 3rem;
+    background: linear-gradient(
+        to right,
+        rgba(174, 103, 250, 1),
+        rgba(244, 152, 103, 1)
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+}
+.main .text .paragraph{
+    color: rgba(129, 175, 221, 1);
+    width: 65%;
+    line-height: 2.3rem;
+}
+.main .text .textFooter{
+    color: rgba(255, 138, 113, 1);
+}
+.container .banner{
+    width: 100%;
+    background: linear-gradient( to right , rgba(174, 103, 250, 1),rgba(244, 152, 103, 1));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.4rem 4rem;
+    border-radius: 10.72px;
+    color: black;
+}
+.banner p{
+    padding-bottom: 1rem;
+}
+.banner .button{
+    background-color: black;
+    padding: 1.3rem 2.5rem;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in .10s;
+}
+.banner .button:hover{
+    background-color: white;
+    color: black;
+    transition: all ease-in .10s;
+}
