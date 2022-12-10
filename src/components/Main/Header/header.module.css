@@ -5,7 +5,7 @@
   align-items: center;
   color: white;
   height: fit-content;
-  margin-top: 10rem;
+  margin-top: 1rem;
 }
 .Header {
   display: flex;
@@ -78,7 +78,7 @@
 }
 .Header .img img {
   align-self: end;
-  width: 600px;
+  width: 750px;
 }
 .logos{
     display: flex;
