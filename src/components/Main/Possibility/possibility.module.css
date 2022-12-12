@@ -57,6 +57,7 @@
     padding: 4.4rem 4rem;
     border-radius: 10.72px;
     color: black;
+
 }
 .banner p{
     padding-bottom: 1rem;
@@ -75,3 +76,4 @@
     color: black;
     transition: all ease-in .10s;
 }
+

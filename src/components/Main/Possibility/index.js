@@ -4,7 +4,7 @@ import styles from "./possibility.module.css";
 const Possibility = () => {
   const img = require("../../../assets/possibility.png");
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="case">
       <div className={styles.main}>
         <div className={styles.img}>
           <img src={img} alt="possibility" />

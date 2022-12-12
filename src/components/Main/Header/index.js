@@ -9,7 +9,7 @@ const Header = () => {
   const dropbox = require("../../../assets/dropbox.png");
   const shopify = require("../../../assets/shopify.png");
   return (
-    <div className={styles.main}>
+    <div className={styles.main} id="home">
       <div className={styles.Header}>
         <div className={styles.texts}>
           <div className={styles.title}>
