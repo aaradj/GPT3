@@ -20,13 +20,13 @@
   padding: 5rem 0;
 }
 
-.cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: fit-content;
-  padding: 1rem 0;
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
 }
 .cards .mainCard {
   display: flex;
@@ -51,8 +51,8 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.discreption .text {
-  padding-bottom: 1rem;
+.mainCard .discreption .text{
+    padding-bottom: 1rem;
 }
 .discreption h3 {
   font-size: 2rem;
@@ -61,31 +61,31 @@
   cursor: pointer;
 }
 .cards img {
-  width: 400px;
+  width: 100%;
 }
-.sideCards {
-  width: 72%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.sideCards{
+    width: 72%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.sideCards .card {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
+.sideCards .card{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
 }
-.sideCards .card img {
-  width: 350px;
-  height: 130.47px;
+.sideCards .card img{
+    width: 350px;
+    height: 130.47px;
 }
-.card .discreption {
-  width: 350px;
-  height: 22vh;
-  padding: 1rem;
-  background-color: rgba(4, 44, 84, 1);
+.card .discreption{
+    width: 350px;
+    height: 22vh;
+    padding: 1rem;
+    background-color: rgba(4, 44, 84, 1);
 }
 .card .discreption h3 {
   font-size: 1.2rem;

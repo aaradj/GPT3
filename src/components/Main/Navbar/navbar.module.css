@@ -5,9 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #ffffff;
-    padding: 1rem 10rem;
-    z-index: 2;
+    color: white;
+    padding: 2rem 13rem;
 }
 .logo{
     font-size: 2rem;

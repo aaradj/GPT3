@@ -1,117 +1,14 @@
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 6rem 4rem 0;
-  background-color: rgba(3, 27, 52, 1);
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  padding: 4rem 13rem 1rem;
-  z-index: 1;
-}
-.container .title {
-  text-align: center;
-}
-.container .title h2 {
-  font-size: 3rem;
-  background: linear-gradient(
-    to right,
-    rgba(174, 103, 250, 1),
-    rgba(244, 152, 103, 1)
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
 
-.buttonBase {
-  border: 2px solid whitesmoke;
-  padding: 2rem 3rem;
-  font-size: 1.2rem;
-  cursor: pointer;
+.listItems .links{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.buttonBase:hover {
-  -webkit-animation: flip-vertical-right 1s
-    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: flip-vertical-right 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+.lists .header h3{
+    padding-bottom: 2rem;
 }
-
-.aboutUs {
-  width: 100%;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-}
-.aboutUs .logo {
-  width: 30%;
-  height: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  padding: 0 5.5rem;
-}
-.logo h3 {
-  font-size: 2rem;
-}
-.logo p {
-  line-height: 1.4rem;
-}
-.aboutUs .links {
-  width: 70%;
-}
-
-.links {
-  width: 70%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: fit-content;
-  height: 100%;
-}
-.link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.link {
-  height: 100%;
-  cursor: pointer;
-}
-
-.link .header {
-  padding-bottom: 2rem;
-  font-size: 1.2rem;
-}
-.link .content p {
-  padding-bottom: 2rem;
-}
-
-.footer {
-  position: absolute;
-  bottom: 2rem;
-  font-size: 0.8rem;
-}
-
-@-webkit-keyframes flip-vertical-right {
-  0% {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-  }
-}
-@keyframes flip-vertical-right {
-  0% {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
-  }
+.lists .list p{
+    padding: 1.4rem 0;
+    cursor: pointer;
 }
