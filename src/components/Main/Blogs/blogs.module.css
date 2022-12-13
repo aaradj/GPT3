@@ -26,7 +26,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: fit-content;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 .cards .mainCard{
     display: flex;
@@ -51,7 +51,7 @@
     align-items: flex-start;
     justify-content: space-between;
 }
-.mainCard .discreption .text{
+.discreption .text{
     padding-bottom: 1rem;
 }
 .discreption h3{
@@ -61,28 +61,29 @@
     cursor: pointer;
 }
 .cards img {
-  width: 400px;
+  width: 100%;
 }
 .sideCards{
-    width: 72%;
+    width: 70%;
     height: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 .sideCards .card{
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin: 2rem 1.5rem;
 }
 .sideCards .card img{
-    width: 350px;
+    width: 100%;
     height: 130.47px;
 }
 .card .discreption{
-    width: 350px;
+    width: 100%;
     height: 22vh;
     padding: 1rem;
     background-color: rgba(4, 44, 84, 1);

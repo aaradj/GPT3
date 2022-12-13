@@ -1,0 +1,68 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(3, 27, 52, 1);
+    color: white;
+    padding: 4rem 13rem 2rem;
+}
+.container .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title h2{
+    font-size: 3rem;
+    background: linear-gradient(
+        to right,
+        rgba(174, 103, 250, 1),
+        rgba(244, 152, 103, 1)
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      text-align: center;
+      padding: 4rem 0;
+}
+.title .buttonBase{
+    font-size: 1.1rem;
+    padding: 2rem 3rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.listItems{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+.listItems .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+.listItems .logo h3{
+    font-size: 2.5rem;
+}
+.listItems .logo p{
+    padding: 1rem 7rem ;
+    line-height: 1.6rem;
+}
+
+.listItems .links{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lists .header h3{
+    padding-bottom: 2rem;
+}
+.lists .list p{
+    padding: 1.4rem 0;
+    cursor: pointer;
+}
