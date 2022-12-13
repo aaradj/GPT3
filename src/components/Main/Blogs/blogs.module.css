@@ -20,73 +20,73 @@
   padding: 5rem 0;
 }
 
-.cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: fit-content;
-    padding: 1rem 0;
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: fit-content;
+  padding: 1rem 0;
 }
-.cards .mainCard{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    background-color: rgba(4, 44, 84, 1);
-    width: 28%;
-    height: 75vh;
-    border-radius: 5px;
-    overflow: hidden;
+.cards .mainCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgba(4, 44, 84, 1);
+  width: 28%;
+  height: 75vh;
+  border-radius: 5px;
+  overflow: hidden;
 }
-.cards .mainCard img{
-    height:287.73px;
-    width: 100%;
-    margin-bottom: 1rem;
+.cards .mainCard img {
+  height: 287.73px;
+  width: 100%;
+  margin-bottom: 1rem;
 }
-.cards .discreption{
-    height: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+.cards .discreption {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.discreption .text{
-    padding-bottom: 1rem;
+.discreption .text {
+  padding-bottom: 1rem;
 }
-.discreption h3{
-    font-size: 2rem;
+.discreption h3 {
+  font-size: 2rem;
 }
-.readMore{
-    cursor: pointer;
+.readMore {
+  cursor: pointer;
 }
 .cards img {
   width: 400px;
 }
-.sideCards{
-    width: 72%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+.sideCards {
+  width: 72%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.sideCards .card{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+.sideCards .card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.sideCards .card img{
-    width: 350px;
-    height: 130.47px;
+.sideCards .card img {
+  width: 350px;
+  height: 130.47px;
 }
-.card .discreption{
-    width: 350px;
-    height: 22vh;
-    padding: 1rem;
-    background-color: rgba(4, 44, 84, 1);
+.card .discreption {
+  width: 350px;
+  height: 22vh;
+  padding: 1rem;
+  background-color: rgba(4, 44, 84, 1);
 }
-.card .discreption h3{
-    font-size: 1.2rem;
+.card .discreption h3 {
+  font-size: 1.2rem;
 }
