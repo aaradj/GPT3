@@ -3,7 +3,7 @@ import styles from "./future.module.css";
 
 const Future = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="ai">
       <div className={styles.title}>
         <h2>
           The Future is Now and You Just Need To Realize It. Step into Future

@@ -3,7 +3,7 @@ import styles from "./gp3.module.css";
 
 const Gp3 = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="gpt">
       <div className={styles.header}>
         <div className={styles.headTitle}>What is GPT-3</div>
 

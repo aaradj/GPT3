@@ -8,7 +8,7 @@ const Blogs = () => {
   const blog4 = require("../../../assets/blog04.png");
   const blog5 = require("../../../assets/blog05.png");
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="library">
       <h2>
         A lot is happening, <br /> We are blogging about it.
       </h2>

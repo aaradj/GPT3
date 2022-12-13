@@ -21,19 +21,19 @@ const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">What is GPT?</a>
+            <a href="#gpt">What is GPT?</a>
           </li>
           <li>
-            <a href="#">Open AI</a>
+            <a href="#ai">Open AI</a>
           </li>
           <li>
-            <a href="#">Case Studies</a>
+            <a href="#case">Case Studies</a>
           </li>
           <li>
-            <a href="#">Library</a>
+            <a href="#library">Library</a>
           </li>
         </ul>
       </nav>
