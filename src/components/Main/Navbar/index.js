@@ -1,25 +1,50 @@
-import React from 'react';
+import React, { useState } from "react";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
-    return (
-        <div className={styles.header}>
-            <h2 className={styles.logo}>GPT-3</h2>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">What is GPT?</a></li>
-                    <li><a href="#">Open AI</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Library</a></li>
-                </ul>
-            </nav>
-            <div className={styles.link}>
-            <a href="#">Sgin in</a>
-            <a href="#" className={styles.buttonText}>Sgin up</a>
-            </div>
-        </div>
-    );
+  const [scroll, setScroll] = useState(document.documentElement.scrollTop);
+  window.addEventListener("scroll", () => {
+    setScroll(document.documentElement.scrollTop);
+  });
+
+  return (
+    <div
+      className={styles.header}
+      style={{
+        background: `${
+          scroll > 30 ? "rgba(255, 255, 255, 0.14)" : "rgba(255, 255, 255, 0)"
+        }`,
+        backdropFilter: `${scroll > 30 ? "blur(4px)" : "blur(0)"}`
+      }}
+    >
+      <h2 className={styles.logo}>GPT-3</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">What is GPT?</a>
+          </li>
+          <li>
+            <a href="#">Open AI</a>
+          </li>
+          <li>
+            <a href="#">Case Studies</a>
+          </li>
+          <li>
+            <a href="#">Library</a>
+          </li>
+        </ul>
+      </nav>
+      <div className={styles.link}>
+        <a href="#">Sgin in</a>
+        <a href="#" className={styles.buttonText}>
+          Sgin up
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;
