@@ -7,40 +7,40 @@
   height: fit-content;
   margin-bottom: 10rem;
   padding: 4rem 13rem;
-    /* ff 3.6+ */
-    background: -moz-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 100%
-    );
-  
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 100%
-    );
-  
-    /* opera 11.10+ */
-    background: -o-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 100%
-    );
-  
-    /* ie 10+ */
-    background: -ms-radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 100%
-    );
-  
-    /* global 92%+ browsers support */
-    background: radial-gradient(
-      circle at 3% 25%,
-      rgba(0, 40, 83, 1) 0%,
-      rgba(4, 12, 24, 1) 100%
-    );
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
 }
 .Header {
   display: flex;
@@ -57,12 +57,11 @@
 }
 .texts .title {
   width: 80%;
-  font-size: 3.5rem;
-  font-weight: bold;
   align-self: start;
 }
 .title h1 {
   font-size: 3.5rem;
+  font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(
     to right,
@@ -72,10 +71,13 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.texts .paragraph{
+  width: 75%;
+  align-self: flex-start;
+  margin: 3rem 0;
+}
 .texts .paragraph p {
   font-size: 1.4rem;
-  width: 75%;
-  margin: 3rem 0;
   line-height: 1.8rem;
   color: rgba(129, 175, 221, 1);
 }
@@ -123,6 +125,9 @@
   display: flex;
   align-items: center;
   padding: 4rem 0;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 .logos img {
   margin: 2rem;
@@ -147,5 +152,125 @@
   100% {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
+  }
+}
+
+@media (max-width: 1800px) {
+  .Header .img img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .main {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .Header .img img {
+    width: 550px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding: 7rem 5rem;
+    background-color: brown;
+  }
+  .Header {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Header .texts  {
+    padding: 1rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .texts .title{
+    width: 100%;
+  }
+  .title h1 {
+    font-size: 2.4rem;
+    width: 90%;
+  }
+  .texts .paragraph{
+    width: 100%;
+    display: flex;
+    margin:1rem 0;
+  }
+  .texts .paragraph p  {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .input input{
+    padding:1.5rem;
+    width: 70%;
+  }
+  .input button{
+    font-size: 1rem;
+    padding: 1.3rem .7rem;
+    width: 30%;
+  }
+  .Header .img{
+    width: 100%;
+    text-align: center;
+  }
+  .Header .img img{
+    width: 600px;
+  }
+}
+
+
+@media (max-width:600px){
+  .main{
+    padding: 5rem 1rem;
+  }
+  .title h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .Header .texts{
+    padding: 1rem 1rem 2rem;
+  }
+  .texts .paragraph{
+    margin:2rem 0;
+  }
+  .texts .paragraph p  {
+    font-size: .9rem;
+    line-height: 1.4rem;
+  }
+  .Header .img img{
+    width: 400px;
+    -webkit-animation: flip-vertical-right 2.5s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-vertical-right 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+  }
+  .logos img{
+    margin: 1rem;
+  }
+}
+
+@media (max-width:500px){
+  .Header .img img{
+    width: 350px;
+  }
+  .title h1 {
+    font-size: 1.5rem;
+  }
+  .input input{
+    padding:1.2rem;
+  }
+  .input button{
+    padding: 1rem .7rem;
+  }
+  .logos{
+    padding: 2rem;
+  }
+  .logos img{
+    width: 70px;
   }
 }

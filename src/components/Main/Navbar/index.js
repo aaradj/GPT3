@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <h2 className={styles.logo}>GPT-3</h2>
       <nav>
-        <ul className={open ? styles.open : null}>
+        <ul className={open ? styles.open : null} onClick={()=> setOpen(false)}>
           <li>
             <a href="#home">Home</a>
           </li>
