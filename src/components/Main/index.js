@@ -14,10 +14,12 @@ const Main = () => {
     <div className={styles.container}>
       <LayoutPage>
         <Header />
+        <div className={styles.main}>
         <Gp3 />
         <Future />
         <Possibiloty />
         <Blogs />
+        </div>
       </LayoutPage>
     </div>
   );
