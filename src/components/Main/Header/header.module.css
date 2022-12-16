@@ -51,7 +51,7 @@
 .Header .texts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 60%;
 }
@@ -83,17 +83,18 @@
 }
 .texts .input {
   display: flex;
-  align-items: center;
-  width: 100%;
+  width: 80%;
+  height: 8vh;
 }
 .input input {
   background-color: rgba(5, 45, 86, 1);
   border: none;
   outline: none;
-  padding: 2rem 1rem;
-  width: 50%;
+  height: 100%;
+  width: 70%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  padding: 0 2rem;
 }
 .input input::placeholder {
   color: rgba(61, 97, 132, 1);
@@ -101,8 +102,8 @@
 }
 .input button {
   font-size: 1.2rem;
-  padding: 1.8rem 1rem;
-  width: 25%;
+  width: 30%;
+  height: 100%;
   border: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -176,7 +177,7 @@
 @media (max-width: 1200px) {
   .main {
     padding: 7rem 5rem;
-    background-color: brown;
+    margin-bottom: 4rem;
   }
   .Header {
     width: 100%;
@@ -205,14 +206,11 @@
     font-size: 1.2rem;
     width: 100%;
   }
-  .input input{
-    padding:1.5rem;
-    width: 70%;
+  .texts .input{
+    width: 100%;
   }
   .input button{
-    font-size: 1rem;
-    padding: 1.3rem .7rem;
-    width: 30%;
+    font-size: .8rem;
   }
   .Header .img{
     width: 100%;
@@ -226,7 +224,7 @@
 
 @media (max-width:600px){
   .main{
-    padding: 5rem 1rem;
+    padding: 5rem 1rem 0;
   }
   .title h1 {
     font-size: 2rem;
@@ -240,7 +238,6 @@
   }
   .texts .paragraph p  {
     font-size: .9rem;
-    line-height: 1.4rem;
   }
   .Header .img img{
     width: 400px;
@@ -256,16 +253,16 @@
 
 @media (max-width:500px){
   .Header .img img{
-    width: 350px;
+    width: 300px;
   }
   .title h1 {
     font-size: 1.5rem;
   }
-  .input input{
-    padding:1.2rem;
+  .texts .input{
+    height: 6vh;
   }
-  .input button{
-    padding: 1rem .7rem;
+  .input input{
+    padding: 0 1rem;
   }
   .logos{
     padding: 2rem;
