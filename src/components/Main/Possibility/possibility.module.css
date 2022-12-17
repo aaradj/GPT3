@@ -1,178 +1,174 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container .main {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10rem;
+}
+.container .main .img {
+  width: 50%;
+}
+.main .img img {
+  width: 650px;
+}
+.main .text {
+  width: 50%;
+  height: fit-content;
+  padding: 1rem 2rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+}
+.main .text .textTitle {
+  color: rgba(113, 229, 255, 1);
+}
+.main .text h2 {
+  font-size: 2.2rem;
+  width: 65%;
+  line-height: 3rem;
+  background: linear-gradient(
+    to right,
+    rgba(174, 103, 250, 1),
+    rgba(244, 152, 103, 1)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.main .text .paragraph {
+  color: rgba(129, 175, 221, 1);
+  width: 70%;
+  line-height: 2.3rem;
+}
+.main .text .textFooter {
+  color: rgba(255, 138, 113, 1);
+}
+.container .banner {
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(174, 103, 250, 1),
+    rgba(244, 152, 103, 1)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.4rem 4rem;
+  border-radius: 10.72px;
+}
+.banner p {
+  padding-bottom: 1rem;
+}
+.banner .button {
+  background-color: black;
+  padding: 1.3rem 2.5rem;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in 0.1s;
+}
+.banner .button:hover {
+  background-color: white;
+  color: black;
+  transition: all ease-in 0.1s;
+}
+@media (max-width: 1700px) {
+  .main .img img {
+    width: 600px;
+  }
+}
+@media (max-width: 1600px) {
+  .main .img img {
+    width: 550px;
+  }
+}
+@media (max-width: 1500px) {
+  .main .img img {
+    width: 500px;
+  }
+}
+@media (max-width: 1400px) {
+  .container .main .img {
     width: 100%;
-}
-.container .main{
+  }
+
+  .main .img img {
+    width: 600px;
+  }
+
+  .main .text {
     width: 100%;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    padding-bottom:10rem ;
+    padding: 3rem 0 0;
+  }
+
+  .main .text h2 {
+    font-size: 2rem;
+    width: 80%;
+    margin: 1rem 0;
+  }
 }
-.container .main .img{
-    width: 50%;
-}
-.main .img img{
-    width:650px;
-}
-.main .text{
-    width: 50%;
-    height: fit-content;
-    padding: 1rem 2rem;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-evenly;
-}
-.main .text .textTitle{
-    color: rgba(113, 229, 255, 1);
-}
-.main .text h2{
-    font-size: 2.2rem;
-    width: 65%;
-    line-height: 3rem;
-    background: linear-gradient(
-        to right,
-        rgba(174, 103, 250, 1),
-        rgba(244, 152, 103, 1)
-      );
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-}
-.main .text .paragraph{
-    color: rgba(129, 175, 221, 1);
-    width: 70%;
-    line-height: 2.3rem;
-}
-.main .text .textFooter{
-    color: rgba(255, 138, 113, 1);
-}
-.container .banner{
+
+@media (max-width: 600px) {
+  .container .main {
+    padding-bottom: 3rem;
+  }
+  .main .img img {
     width: 100%;
-    background: linear-gradient( to right , rgba(174, 103, 250, 1),rgba(244, 152, 103, 1));
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4.4rem 4rem;
-    border-radius: 10.72px;
-
-}
-.banner p{
-    padding-bottom: 1rem;
-}
-.banner .button{
-    background-color: black;
-    padding: 1.3rem 2.5rem;
-    border-radius: 40px;
-    font-size: 1.2rem;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-    transition: all ease-in .10s;
-}
-.banner .button:hover{
-    background-color: white;
-    color: black;
-    transition: all ease-in .10s;
-}
-
-@media (max-width:1700px){
-    .main .img img{
-        width:600px;
-    }
+  }
+  .main .text h2 {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 1rem 0;
+    line-height: 2rem;
+  }
+  .main .text .paragraph {
+    width: 100%;
+    line-height: 1.7rem;
+  }
+  .container .banner {
+    padding: 0.8rem;
+  }
+  .main .text .textFooter {
+    margin: 1rem 0;
+  }
+  .banner .button {
+    width: 10rem;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+  }
+  .banner h2 {
+    font-size: 1rem;
+  }
+  .banner p {
+    font-size: 0.8rem;
+  }
 }
 
-@media (max-width:1600px){
-    .main .img img{
-        width:550px;
-    }
-}
-
-@media (max-width:1500px){
-    .main .img img{
-        width:500px;
-    }
-}
-
-
-@media (max-width:1400px){
-    .container .main .img{
-        width: 100%;
-    }
-
-    .main .img img{
-        width: 600px;
-    }
-
-    .main .text{
-        width: 100%;
-        padding: 3rem 0 0;
-    }
-
-    .main .text h2{
-        font-size: 2rem;
-        width: 80%;
-        margin: 1rem 0;
-    }
-
-}
-
-
-@media (max-width:600px){
-    .container .main{
-        padding-bottom: 3rem;
-    }
-    .main .img img{
-        width: 100%;
-    }
-    .main .text h2{
-        font-size: 1.6rem;
-        width: 100%;
-        margin: 1rem 0;
-        line-height: 2rem;
-    }
-    .main .text .paragraph{
-        width: 100%;
-        line-height: 1.7rem;
-    }
-    .container .banner{
-        padding: .8rem;
-    }
-    .main .text .textFooter{
-        margin: 1rem 0;
-    }
-    .banner .button{
-        width: 10rem;
-        padding: 1rem 0;
-        font-size: .8rem;
-        margin: 0 1rem;
-    }
-    .banner h2{
-        font-size: 1rem;
-    }
-    .banner p{
-        font-size: .8rem;
-    }
-}
-
-@media (max-width:450px){
-    .container .banner{
-        padding: .8rem;
-    }
-    .banner .button{
-        width: 12rem;
-        padding: .8rem 0;
-        font-size: .8rem;
-        margin: 0 1rem;
-    }
-    .banner h2{
-        font-size: 1rem;
-    }
-    .banner p{
-        font-size: .8rem;
-        padding-bottom: .5rem;
-    }
+@media (max-width: 450px) {
+  .container .banner {
+    padding: 0.8rem;
+  }
+  .banner .button {
+    width: 12rem;
+    padding: 0.8rem 0;
+    font-size: 0.6rem;
+    margin: 0 1rem;
+  }
+  .banner h2 {
+    font-size: .8rem;
+  }
+  .banner p {
+    font-size: 0.6rem;
+    padding-bottom: 0.5rem;
+  }
 }

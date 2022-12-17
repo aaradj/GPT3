@@ -1,9 +1,10 @@
 .container{
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: rgba(3, 27, 52, 1);
     color: white;
     padding: 4rem 13rem 2rem;
@@ -12,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 }
 .title h2{
     font-size: 3rem;
@@ -41,7 +43,6 @@
 .listItems .logo{
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 30%;
 }
@@ -52,6 +53,11 @@
     padding: 1rem 7rem ;
     line-height: 1.6rem;
 }
+.lists{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
 
 .listItems .links{
     width: 70%;
@@ -59,10 +65,62 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.lists .header h3{
-    padding-bottom: 2rem;
-}
 .lists .list p{
     padding: 1.4rem 0;
     cursor: pointer;
+}
+
+
+@media (max-width:1200px){
+    .container{
+        padding: 1rem 5rem;
+    }
+    .title{
+        width: 100%;
+    }
+    .listItems{
+        width: 100%;
+        flex-direction: column;
+    }
+    .listItems .logo{
+        width: 100%;
+        text-align: start;
+        margin-bottom: 3rem;
+    }
+    .listItems .logo h3{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .listItems .logo p{
+        padding: 0;
+        font-size: .9rem;
+    }
+    .listItems .links{
+        width: 100%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+}
+@media (max-width:600px){
+    .container{
+        padding: 1rem;
+    }
+    .title h2{
+      font-size: 1.6rem;
+    }
+    .title .buttonBase{
+        font-size: .9rem;
+        padding: 1.5rem 2rem;
+        border: 1px solid white;
+    }
+    .footer p{
+        font-size: .6rem;
+    }
+}
+
+@media (max-width:400px){
+    .container{
+        padding: .5rem;
+    }
 }
