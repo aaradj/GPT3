@@ -1,9 +1,9 @@
 .container{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    /* margin-top: 8rem; */
     padding-top: 12rem;
 }
 .title{
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
 }
 .main .box h3{
     border-top: 3px solid rgba(255, 138, 113, 1);
@@ -54,4 +54,32 @@
     width: 75%;
     padding: 0 4rem;
     color: rgba(129, 175, 221, 1);
+}
+
+@media (max-width:800px){
+    .container{
+        padding-top: 6rem ;
+    }
+    .title{
+        width: 100%;
+        padding: 0 0 3rem;
+    }
+    .title h2{
+        width: 100%;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .title p{
+        font-size: 1rem;
+    }
+    .main{
+        width: 100%;
+    }
+    .main .box h3{
+        font-size: 1rem;
+        padding: 0;
+    }
+    .main .box p{
+        padding: 0 0 0 2rem;
+    }
 }
