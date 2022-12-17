@@ -127,7 +127,7 @@ nav ul li a {
 @media (max-width: 600px) {
   .header {
     padding: 1rem 2rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .link a{
     font-size: 1rem;
